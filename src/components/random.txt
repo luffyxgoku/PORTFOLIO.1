@@ -1,0 +1,1 @@
+button ->   bg-blue-900 border-teal-700 border-0 text-white font-medium p-2 rounded-lg  hover:bg-gray-700 transition-transform duration-300 transform hover:scale-110

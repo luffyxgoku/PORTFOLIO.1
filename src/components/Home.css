@@ -1,0 +1,136 @@
+/* Home.css */
+.portfolio-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  /* background-color: aqua; */
+}
+
+.back-img {
+  position: absolute;
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  /* filter: blur(0.25rem); */
+}
+
+.text-content {
+  width: 50%;
+  padding: 20% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.heading1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.h1-1,
+.h1-2 {
+  font-weight: 900;
+  font-size: 65px;
+}
+
+.h1-1 {
+  color: white;
+}
+.h1-2 {
+  color: blue;
+}
+
+.heading3 {
+  font-size: 20px;
+  color: white;
+}
+
+.carousel {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.image-content {
+  width: 50%;
+  padding: 12% 10%;
+  text-align: center;
+}
+
+.profilepic {
+  width: 15rem;
+  box-shadow: 10px 20px 8px #888888;
+  border-radius: 50px;
+  transition: transform 0.3s; /* Add a smooth transition for the transform property */
+}
+
+/* Add a hover effect */
+.profilepic:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+}
+
+.button1 {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: transform 0.3s;
+}
+
+.button1:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+}
+
+/* Home.css */
+/* ... (previous styles) */
+
+.competencies-container {
+  padding: 40px;
+  background-color: blue; /* Background color */
+  color: #ecf0f1; /* Text color */
+  border: 1px solid #34495e; /* Border color */
+  border-radius: 10px; /* Rounded borders */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.competencies-heading {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.competencies-intro {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.competency-item {
+  margin-top: 20px;
+}
+
+.competency-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.competency-description {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Add hover effect for the entire container */
+.competencies-container:hover {
+  background-color: #34495e;
+  transition: background-color 0.3s;
+}
+
+/* Add hover effect for competency items */
+.competency-item:hover {
+  background-color: #34495e;
+  transition: background-color 0.3s;
+}
