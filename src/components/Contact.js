@@ -3,9 +3,9 @@ import ContactUs from "./ContactUs.js";
 
 function Contact() {
   return (
-    <div className="bg-zinc-300 pt-10 ">
+    <div className="pt-24 md:pt-10 ">
       <section id="contact">
-        <h1 className="font-bold text-center text-blue-600 pt-4">
+        <h1 className="font-bold text-center text-sky-600 pt-4 underline underline-offset-8 decoration-sky-950">
           <span className="text-black">Get in</span> Touch
         </h1>
 

@@ -78,13 +78,13 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="pt-10 pb-4 grid justify-center content-center bg-gray-700 "
+      className="pt-24 md:pt-10 pb-4 grid justify-center content-center"
     >
-      <h1 className="text-center py-4 text-white font-medium">My Skills</h1>
-      <div className="mb-2 grid grid-cols-2 gap-4 w-[px] sm:grid sm:grid-cols-3 sm:w-[600px] sm:h-[600px] sm:gap-4 lg:grid lg:grid-cols-4 lg:w-[800px] lg:h-[600px] lg:gap-4 ">
+      <h1 className="animate-pulse text-center py-4 text-black font-bold"> Skills</h1>
+      <div className="mb-2 grid grid-cols-2 gap-4 w-[px] sm:grid sm:grid-cols-3 sm:w-[600px] sm:h-[600px] sm:gap-4 lg:grid lg:grid-cols-4 lg:w-[800px] lg:h-[600px] lg:gap-4">
         {skillsData.map((skill) => (
           <div
-            className="rounded-md bg-gray-600 shadow-xl shadow-gray-900 hover:bg-yellow-500 cursor-default transition-transform transform hover:scale-110 hover:rotate-6"
+            className="rounded-md bg-sky-950 hover:bg-black cursor-default transition-transform transform hover:scale-110 hover:rotate-6"
             key={skill.id}
           >
             <div className="grid justify-center mt-6 sm:mt-6 lg:mt-14  mb-2">

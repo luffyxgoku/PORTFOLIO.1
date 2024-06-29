@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import HomeFooter from "./HomeFooter.js";
 
@@ -10,23 +10,29 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service_i072z9o",
-        "template_7adl373",
+        "service_nfxoenc",
+        "template_qe2okq6",
         form.current,
-        "0SgWQmcO4Tvr5YxaX"
+        "cXMqsw7lo4FLZCT7X"
       )
       .then(
         (result) => {
           console.log(result.text);
+          // Reset form fields
+          form.current.reset();
+          // Show success alert
+          alert("Email sent successfully");
         },
         (error) => {
           console.log(error.text);
+          // Show error alert
+          alert("Error sending email");
         }
       );
   };
 
   return (
-    <div className="bg-zinc-300">
+    <div className="bg-white">
       <div className="lg:flex justify-center items-center m-16 pt-10">
         <div className="lg:flex-1 mb-4">
           <h1>Let's Chat.</h1>
@@ -47,9 +53,9 @@ export const ContactUs = () => {
 
             <a
               className="flex items-center no-underline ml-2 "
-              href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+              href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
             >
-              khanshadman7777@gmail.com
+              kinghunz12@gmail.com
             </a>
           </div>
         </div>
@@ -61,7 +67,7 @@ export const ContactUs = () => {
                 className="w-full my-2 p-2 border-0 rounded-md text-white bg-gray-700 focus:outline-none focus:ring focus:border-blue-300"
                 type="text"
                 placeholder="Name"
-                name="to_name"
+                name="from_name"
               />
               <input
                 className="w-full my-2 p-2 border-0 rounded-md bg-gray-700 text-white focus:outline-none focus:ring focus:border-blue-300"

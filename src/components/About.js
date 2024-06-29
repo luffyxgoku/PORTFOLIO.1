@@ -1,9 +1,11 @@
 import React from "react";
+import profileimage3 from "./picabout3";
+import profileimage4 from "./picabout5.jpeg";
 
 function About() {
   const handleDownload = () => {
     // Path to your PDF file
-    const pdfPath = "/Shadman_Khan.pdf";
+    const pdfPath = "/Sami.pdf";
 
     // Create a new anchor element
     const link = document.createElement("a");
@@ -12,7 +14,7 @@ function About() {
     link.href = pdfPath;
 
     // Set the download attribute with the desired file name
-    link.download = "Shadman_Khan.pdf";
+    link.download = "Sami.pdf";
 
     // Append the anchor element to the document
     document.body.appendChild(link);
@@ -26,61 +28,47 @@ function About() {
   return (
     <div>
       <section id="about">
-        <div className="lg:flex pb-10 pt-16">
+        <div className="lg:flex pt-16 pb-4">
           <div className="lg:flex-1">
-            <div className="flex justify-center items-center sm: flex flex-wrap ml-36 mt-20">
+            <div className="flex justify-center items-center sm: flex flex-wrap ml-36 mt-6">
               <img
                 className="px-8 py-8"
-                src="https://c4.wallpaperflare.com/wallpaper/216/42/445/lionel-messi-4k-hd-download-wallpaper-preview.jpg"
+                src={profileimage3}
                 width={500}
-                alt="aboutPic1"
+                alt="img"
               />
               <img
                 className="px-8 py-8 relative bottom-24 right-40"
-                src="https://c4.wallpaperflare.com/wallpaper/44/959/737/cristiano-ronaldo-4k-portugal-footballer-wallpaper-thumb.jpg"
+                src={profileimage4}
                 width={500}
-                alt="aboutPic2"
+                alt="img"
               />
             </div>
           </div>
 
           <div className="lg:flex-1 lg:flex-col px-4">
-            <h5 className="text-blue-300 font-semibold mb-0">ABOUT ME</h5>
-            <h1 className="font-bold mb-8">I Develope Websites</h1>
+            <h1 className="text-black animate-pulse font-bold mb-4">ABOUT</h1>
+            {/*<h4 className="font-sm mt-4 mb-2">I Develope Websites</h4>*/}
             <p>
-              I am a passionate and innovative technologist with a deep love for
-              problem-solving and a keen interest in cutting-edge technologies.
-              With a background in Your Field or Specialization, I am dedicated
-              to pushing the boundaries of what's possible in the digital world.
-              My journey in the tech industry began Mention how and when you
-              started in tech. Since then, I have continuously evolved and
-              adapted to the fast-paced nature of this field. I thrive in
-              collaborative environments and have a strong track record of
-              working with cross-functional teams to deliver solutions that not
-              only meet but exceed expectations. I am a firm believer in
-              lifelong learning and keep myself updated with the latest trends
-              and developments in the tech landscape. Whether it's [Mention a
-              few technologies or areas you're passionate about], I am committed
-              to staying at the forefront of innovation. In addition to my
-              technical skills, I understand the importance of clear
-              communication and effective project management. I enjoy
-              translating complex technical concepts into plain language that
-              everyone can understand, and I take pride in delivering projects
-              on time and within budget. Outside of work, I'm a Mention a few
-              personal interests or hobbies enthusiast and a strong advocate for
-              Any relevant cause or community involvement. I believe that a
-              well-rounded perspective not only enriches my life but also
-              contributes to my problem-solving abilities in the tech world. I
-              am excited about the opportunities that lie ahead and am eager to
-              collaborate on projects that push the boundaries of technology. If
-              you're looking for someone who is not only skilled but also
-              passionate about what they do, I'd love to be a part of your tech
-              journey.
+            <strong>About Me </strong>
+<p>Hi, I'm Sami, a passionate and dedicated full stack web developer with over 3 years of experience in building dynamic and user-centric web applications. I specialize in both front-end and back-end development, ensuring seamless integration and performance across the entire stack.</p>
+
+<strong>Professional Background </strong> 
+<p>My journey in web development began in 2020, and since then, I've honed my skills in various technologies including HTML, CSS, JavaScript, React, Node.js, Express, and Postgresql. I enjoy tackling complex problems and transforming ideas into functional, visually appealing websites and applications.</p>
+
+<strong>Interests and Hobbies </strong>
+<p>When I'm not coding, you'll often find me with my nose in a book, exploring different genres and gaining new perspectives. I'm also an avid football enthusiast – both on the field and off. I love watching matches, analyzing games, and playing football with friends. Socializing is another passion of mine; I thrive on connecting with new people, exchanging ideas, and building meaningful relationships.</p>
+
+<strong>My Approach </strong>
+<p>In my work, I prioritize clean, maintainable code and user experience. I believe in continuous learning and staying updated with the latest industry trends to deliver the best possible solutions. Whether it's a simple website or a complex platform, I approach each project with creativity, precision, and a commitment to excellence.</p>
+
+<strong>Let's Connect </strong>
+<p>I'm always open to new opportunities and collaborations. If you're looking for a skilled web developer to bring your vision to life, feel free to reach out. Let's create something amazing together!</p>
             </p>
             <div className="grid grid-cols-2 gap-3">
               <div className="p-0">
                 <p className="font-semibold mb-0">NAME</p>
-                <p>Shadman Khan</p>
+                <p>MD. SAMI ADNAN</p>
               </div>
               <div className="p-0">
                 <p className="font-semibold mb-0">EDUCATION</p>
@@ -88,7 +76,7 @@ function About() {
               </div>
               <div className="p-0">
                 <p className="font-semibold mb-0">EMAIL</p>
-                <p>khanshadman7777@gmail.com</p>
+                <p>kinghunz12@gmail.com</p>
               </div>
               <div className="p-0">
                 <p className="font-semibold mb-0">EMPLOYMENT</p>
@@ -97,7 +85,7 @@ function About() {
             </div>
 
             <button
-              className="font-semibold bg-blue-500 px-8 py-2 rounded-md text-white text-sm "
+              className="font-semibold bg-sky-600 px-8 py-2 rounded-md text-white text-sm  hover:bg-black transition-transform duration-300 transform hover:scale-110"
               onClick={handleDownload}
             >
               DOWNLOAD CV

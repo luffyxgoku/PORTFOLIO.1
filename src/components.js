@@ -8,7 +8,7 @@ import Skills from "./components/Skills.js";
 function Components() {
   return (
     <div>
-      <section id="home">
+      <section id="home" >
         <Home />
       </section>
       <section id="about">
