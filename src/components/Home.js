@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 //import "./Home.css";
 import profileimage from "./newpic3.jpeg";
 
@@ -27,7 +27,28 @@ function Home() {
   };
 
   const [text, setText] = useState("Java");
-  const texts = ["Java", "React.js", "Node.js", "postgreSQL"];
+  // const texts = ["Java", "React.js", "Node.js", "postgreSQL"];
+
+  // useEffect(() => {
+  //   let currentIndex = 0;
+
+  //   const interval = setInterval(() => {
+  //     setText(texts[currentIndex]);
+  //     currentIndex = (currentIndex + 1) % texts.length;
+  //   }, 1500);
+
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
+
+
+  const texts = useMemo(() => [
+    'React.js',
+    'Node.js',
+    'postgreSQL'
+    // Add more texts as needed
+  ], []);
 
   useEffect(() => {
     let currentIndex = 0;
@@ -40,7 +61,8 @@ function Home() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [texts]);
+
 
   return (
     <div>
