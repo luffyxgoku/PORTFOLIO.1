@@ -70,7 +70,7 @@ function Home() {
         {/*bg-gradient-to-r from-blue-200 to-gray-400*/}
         <div className="h-screen lg:flex justify-center items-center pt-2">
           <div className="lg:flex-1 mt-16">
-            <div className="pt-4 ml-24 md:ml-36 lg:ml-36">
+            <div className="pt-4 ml-16 md:ml-36 lg:ml-36">
               <h2 className="animate-pulse sm:animate-bounce mt-8 mb-0 font-semibold md:text-3xl lg:text-4xl">
                 Hello, I'm
               </h2>
@@ -87,9 +87,9 @@ function Home() {
                 {text}
               </h2>
             </div>
-            <div className="ml-36">
+            <div className="ml-16 sm:ml-36">
               <button
-                className="mb-2 mt-1 bg-sky-600 text-white font-semibold py-3 px-4 rounded-lg  hover:bg-black transition-transform duration-300 transform hover:scale-110"
+                className="ml-6 sm:ml-0 mb-2 mt-1 bg-sky-600 text-white font-semibold py-3 px-4 rounded-lg  hover:bg-black transition-transform duration-300 transform hover:scale-110"
                 onClick={handleDownload}
               >
                 DOWNLOAD CV
@@ -107,7 +107,7 @@ function Home() {
         </div>
         <div className="pt-4 pb-4">
           <div className="flex flex-wrap justify-center m-8">
-            <h1 className="text-black underline underline-offset-8 decoration-sky-950">Welcome to my World</h1>
+            <h1 className="text-black underline underline-offset-8 decoration-sky-950 ml-10 sm:ml-0">Welcome to my World</h1>
             <p className="mt-4 text-white">
               I am a young Full-stack Developer looking to take on the tech
               world by storm. I grew up in Jamshedpur, India. I am a young

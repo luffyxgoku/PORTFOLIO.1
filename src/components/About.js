@@ -47,7 +47,7 @@ function About() {
           </div>
 
           <div className="lg:flex-1 lg:flex-col px-4">
-            <h1 className="text-black animate-pulse font-bold mb-4">ABOUT</h1>
+            <h1 className="text-black animate-pulse font-bold mb-4 ml-24 sm:ml-0">ABOUT</h1>
             {/*<h4 className="font-sm mt-4 mb-2">I Develope Websites</h4>*/}
             <p>
             <strong>About Me </strong>
@@ -70,22 +70,22 @@ function About() {
                 <p className="font-semibold mb-0">NAME</p>
                 <p>MD. SAMI ADNAN</p>
               </div>
-              <div className="p-0">
+              <div className="ml-10 sm:ml-0 p-0">
                 <p className="font-semibold mb-0">EDUCATION</p>
-                <p>R.V.S College of Engineering and Technology</p>
+                <p>R.V.S.C.E.T</p>
               </div>
               <div className="p-0">
                 <p className="font-semibold mb-0">EMAIL</p>
                 <p>kinghunz12@gmail.com</p>
               </div>
-              <div className="p-0">
+              <div className="ml-10 sm:ml-0 p-0">
                 <p className="font-semibold mb-0">EMPLOYMENT</p>
                 <p>Available</p>
               </div>
             </div>
 
             <button
-              className="font-semibold bg-sky-600 px-8 py-2 rounded-md text-white text-sm  hover:bg-black transition-transform duration-300 transform hover:scale-110"
+              className="ml-16 sm:ml-0 font-semibold bg-sky-600 px-8 py-2 rounded-md text-white text-sm  hover:bg-black transition-transform duration-300 transform hover:scale-110"
               onClick={handleDownload}
             >
               DOWNLOAD CV

@@ -142,10 +142,10 @@ function Navbar() {
 
         <ul
           className={`mb-0 md:flex md:items-center md:pb-0 pb-2 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 cursor-pointer transition-all duration-500 ease-in ${
-            open ? "flex flex-row bg-white space-x-4 top-6" : "top-[-490px]"
+            open ? "flex flex-col md:flex-row bg-white space-x-0 space-y-2 top-13": "top-[-490px]"
           }`}
         >
-          <li className="md:ml-8 text-xl md:my-0 my-7">
+          <li className="md:ml-8 text-xl md:my-0 my-0">
             <Link
               to="home"
               smooth={true}
@@ -156,7 +156,7 @@ function Navbar() {
               Home
             </Link>
           </li>
-          <li className="md:ml-8 text-xl md:my-0 my-7">
+          <li className="md:ml-8 text-xl md:my-0 mt-7">
             <Link
               to="about"
               smooth={true}

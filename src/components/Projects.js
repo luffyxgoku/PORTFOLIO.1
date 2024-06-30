@@ -5,7 +5,7 @@ function Projects() {
     {
       id: 1,
       name: "SHOPKARO",
-      tech_used: "React js, Node js, Jwtauth, Stripe, Postgresql.",
+      tech_used: "React js, Node js, JWT Auth, Stripe, Postgresql.",
       image: "https://img.freepik.com/free-photo/tools-materials-sanitary-works_93675-132625.jpg?t=st=1719573467~exp=1719577067~hmac=49bd340b52c2d63e63f39fc0c68004aba0b26cc97b7154b3ce89259ebdd8e00d&w=996",
       link: "https://www.wikipedia.org",
       github_link: "https://github.com/luffyxgoku",
@@ -55,7 +55,7 @@ function Projects() {
         <h1 className="animate-pulse text-center text-black font-bold py-4">
           Projects
         </h1>
-        <div className="flex flex-wrap justify-center gap-4 ">
+        <div className="ml-6 sm:ml-0 mr-6 sm:mr-0 flex flex-wrap justify-center gap-4 ">
           {projectsData.map((project) => (
             <div
               className="w-[400px] transition-transform transform hover:scale-105"

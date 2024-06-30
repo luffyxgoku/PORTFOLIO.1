@@ -38,14 +38,14 @@ export const ContactUs = () => {
           <h1>Let's Chat.</h1>
           <h1>Tell me about your Project.</h1>
           <p>Let's create something together</p>
-          <div className="flex flex-1 mr-2 border-0 rounded-lg shadow-sm p-2 w-9/10 hover:transform hover:scale-105 duration-300">
+          <div className="flex flex-1 mr-0 sm:mr-60 border-0 rounded-lg shadow-sm p-2 w-9/10 hover:transform hover:scale-105 duration-300">
             <a
               href="https://gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                className="ml-2 h-[40px] w-[40px]"
+                className="ml-0 sm:ml-2 h-[40px] w-[40px]"
                 src="https://freelogopng.com/images/all_img/1657907107gmail-icon-black.png"
                 alt="Gmail"
               />
@@ -59,8 +59,8 @@ export const ContactUs = () => {
             </a>
           </div>
         </div>
-        <div className="w-5/6 lg:w-1/2 mr-12">
-          <div className="lg:flex-1  ml-4 border-1 px-4 py-2 rounded-lg shadow-md ">
+         <div className="ml-3 sm:ml-0 w-5/6 lg:w-1/2 mr-12">
+        <div className="lg:flex-1 px-4 py-2 ml-4 border-1 rounded-lg shadow-md ">
             <h4 className="mb-4 mt-2 ">Send me a message</h4>
             <form className="" ref={form} onSubmit={sendEmail}>
               <input
