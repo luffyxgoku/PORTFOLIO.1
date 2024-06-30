@@ -11,10 +11,15 @@ const HomeFooter = () => {
           <p className="mb-1 text-black">
             <strong>Email:</strong> kinghunz12@gmail.com
           </p>
-          <p className="mb-1 text-black">
+          {/* <p className="mb-1 text-black">
             <strong>Address:</strong> H.no-14, R.no-12, Nr K.M.U.Highschool, Zakirnagar(E),Mango,
             Jamshedpur, Jharkhand, India.
+          </p> */}
+
+          <p className="mb-1 text-black">
+            <strong>Country:</strong> India.
           </p>
+
         </div>
       </div>
       <div className="flex justify-center items-center ">

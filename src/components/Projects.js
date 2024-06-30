@@ -4,6 +4,20 @@ function Projects() {
   const projectsData = [
     {
       id: 1,
+      name: "SHOPKARO",
+      tech_used: "React js, Node js, Jwtauth, Stripe, Postgresql.",
+      image: "https://img.freepik.com/free-photo/tools-materials-sanitary-works_93675-132625.jpg?t=st=1719573467~exp=1719577067~hmac=49bd340b52c2d63e63f39fc0c68004aba0b26cc97b7154b3ce89259ebdd8e00d&w=996",
+      link: "https://www.wikipedia.org",
+      github_link: "https://github.com/luffyxgoku",
+      des_1:
+        "Developed a comprehensive hardware and plumbing services platform using React, Node.js, Stripe, JWT authentication, and PostgreSQL.",
+      des_2:
+        "Integrated Stripe for seamless and secure payment transactions, allowing users to easily book and pay for services online.Designed and implemented JWT-based authentication to provide secure user access, ensuring data privacy and integrity across the platform.",
+      des_3:
+        "Led the back-end development with Node.js, ensuring efficient service management, secure user authentication via JWT, and reliable data storage using PostgreSQL.",
+    },
+    {
+      id: 2,
       name: "FILMY DUNIYA",
       tech_used: "React js, Node js, Stripe, Firebase, TMDB Api.",
       image:
@@ -17,22 +31,6 @@ function Projects() {
       des_3:
         "Led front-end development with React for a dynamic user interface, and back-end development with Node.js for efficient API handling and user authentication.",
       },
-
-    {
-      id: 2,
-      name: "SHOPKARO",
-      tech_used: "React js, Node js, Jwtauth, Stripe, Postgresql.",
-      image: "https://img.freepik.com/free-photo/tools-materials-sanitary-works_93675-132625.jpg?t=st=1719573467~exp=1719577067~hmac=49bd340b52c2d63e63f39fc0c68004aba0b26cc97b7154b3ce89259ebdd8e00d&w=996",
-      link: "https://www.wikipedia.org",
-      github_link: "https://github.com/luffyxgoku",
-      des_1:
-        "Developed a comprehensive hardware and plumbing services platform using React, Node.js, Stripe, JWT authentication, and PostgreSQL.",
-      des_2:
-        "Integrated Stripe for seamless and secure payment transactions, allowing users to easily book and pay for services online.Designed and implemented JWT-based authentication to provide secure user access, ensuring data privacy and integrity across the platform.",
-      des_3:
-        "Led the back-end development with Node.js, ensuring efficient service management, secure user authentication via JWT, and reliable data storage using PostgreSQL.",
-    },
-
     {
       id: 3,
       name: "FACE FINDER",
